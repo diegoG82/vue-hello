@@ -7,12 +7,19 @@
     <title>Hello Vue</title>
     <!-- script Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- INSERISCO SEMPRE NEL BODY UN DV CON ID APP!!!! -->
     <div id="app">
-      <h1>{{message}}</h1>
-      <img :src="logovueimg" alt="" />
+      <div class="centerContainer">
+        <h2 :class="imgclass">{{message}}</h2>
+        <img :class="imgclass" :src="logovueimg" alt="" />
+        <input type="text" id="nameImput" v-model="nameImput" />
+        <button @click="hiddenText">Clicca!</button>
+        <h1 :class="hiddenClass">Benvenuto in Vue JS    {{nameImput}}!!!</h1>
+      </div>
     </div>
 
     <!-- script js -->
