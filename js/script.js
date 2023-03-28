@@ -4,13 +4,17 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      
       //   SEMPLICE MESSAGGIO
       message: "Hello Vue!",
+
+      // CAMPO VUOTO PER L'IMPUT
+      nameImput: "",
+
       //   INSERIMENTO IMMAGINE
       logovueimg:
         "https://css-tricks.com/wp-content/uploads/2020/06/vue-glowing.png",
-      
-        nameImput: "",
+
       // INTERFACCIA CLASSE VUE CON CSS
       imgclass: "imgwidth",
       hiddenClass: "hidden",
